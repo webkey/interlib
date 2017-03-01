@@ -115,8 +115,8 @@
 	border: 1px solid #000;
 }*/
 
-.l-header__logo,
-.l-header__title{
+.l-header__holder .l-logo,
+.l-header__holder .l-header__title{
 	display: table-cell;
 	vertical-align: middle;
 }
