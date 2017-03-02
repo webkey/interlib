@@ -146,41 +146,130 @@
 					<div class="content-wrap">
 						<div class="backnav wrap">
 							<a href="#" title="Главная"><span>Главная</span></a>
-							<a href="#" title="Электронные информационные ресурсы"><span>Электронные информационные ресурсы</span></a>
+							<a href="#" title="О библиотеке"><span>О библиотеке</span></a>
+							<a href="#" title="Порядок пользования залом для групповых занятий отдела обслуживания специализированными фондами"><span>Порядок пользования залом для групповых занятий отдела обслуживания специализированными фондами</span></a>
 						</div>
-						<div class="az-menu">
-							<ul class="az-menu__list">
-								<li><a href="#"><span>А</span></a></li>
-								<li><a href="#"><span>Б</span></a></li>
-								<li><a href="#"><span>В</span></a></li>
-								<li><a href="#"><span>Г</span></a></li>
-								<li><a href="#"><span>Д</span></a></li>
-								<li><a href="#"><span>Е</span></a></li>
-								<li><a href="#"><span>Ё</span></a></li>
-								<li><a href="#"><span>Ж</span></a></li>
-								<li><a href="#"><span>З</span></a></li>
-								<li><a href="#"><span>И</span></a></li>
-								<li><a href="#"><span>Й</span></a></li>
-								<li><a href="#" class="active"><span>К</span></a></li>
-								<li><a href="#"><span>Л</span></a></li>
-								<li><a href="#"><span>М</span></a></li>
-								<li><a href="#"><span>Н</span></a></li>
-								<li><a href="#"><span>О</span></a></li>
-								<li><a href="#"><span>П</span></a></li>
-								<li><a href="#"><span>Р</span></a></li>
-								<li><a href="#"><span>С</span></a></li>
-								<li><a href="#"><span>Т</span></a></li>
-								<li><a href="#"><span>У</span></a></li>
-								<li><a href="#"><span>Ф</span></a></li>
-								<li><a href="#"><span>Х</span></a></li>
-								<li><a href="#"><span>Ц</span></a></li>
-								<li><a href="#"><span>Ч</span></a></li>
-								<li><a href="#"><span>Ш</span></a></li>
-								<li><a href="#"><span>Щ</span></a></li>
-								<li><a href="#"><span>Э</span></a></li>
-								<li><a href="#"><span>Ю</span></a></li>
-								<li><a href="#"><span>Я</span></a></li>
-							</ul>
+
+						<div class="search-ex">
+							<form action="/search-vcpi-faq" class="context-search form-multiple">
+								<div class="flex-row">
+									<div class="col-xs-12 col-md-12">
+										<div class="input">
+											<input type="text" placeholder="" name="faq_text" id="ex-search-title">
+											<label>Наименование электронного информационного ресурса</label>
+											<span class="focus-border"></span>
+											<span class="input__note note__success color--green"></span>
+										</div>
+									</div>
+								</div>
+								<div class="flex-row">
+									<div class="col-xs-12 col-md-6">
+										<div class="input">
+											<input type="text" placeholder="" name="faq_text" id="ex-search-creator">
+											<label>Создатель</label>
+											<span class="focus-border"></span>
+											<span class="input__note note__success color--green"></span>
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-6">
+										<div class="input">
+											<input type="text" placeholder="" name="faq_text" id="ex-search-owner">
+											<label>Владелец</label>
+											<span class="focus-border"></span>
+											<span class="input__note note__success color--green"></span>
+										</div>
+									</div>
+								</div>
+								<div class="flex-row">
+									<div class="col-xs-12 col-md-6">
+										<div class="input select">
+											<select name="rubric">
+												<option value="0-1">Тип</option>
+												<option value="all">Все рубрики</option>
+												<option value="31">Авторское право</option>
+												<option value="32">Административное право</option>
+												<option value="33">Банковское право</option>
+												<option value="34">Гражданское право</option>
+												<option value="35">Жилищное право</option>
+												<option value="36">Земельное право</option>
+												<option value="37">Избирательное право</option>
+												<option value="38">Конституционное право</option>
+												<option value="39">Медицина</option>
+												<option value="40">Международное право</option>
+												<option value="41">Налоговое и финансовое право</option>
+												<option value="42">Образование</option>
+												<option value="43">Охрана труда</option>
+												<option value="44">Пенсионное обеспечение</option>
+												<option value="45">Семейное право</option>
+												<option value="46">Социальное обеспечение</option>
+												<option value="47">Строительство</option>
+												<option value="48">Судоустройство</option>
+												<option value="49">Таможенное право</option>
+												<option value="50">Торговое право</option>
+												<option value="51">Транспортное право</option>
+												<option value="52">Трудовое право</option>
+												<option value="53">Уголовное право</option>
+												<option value="54">Хозяйственное право</option>
+												<option value="55">Экологическое право</option>
+												<option value="56">Иное</option>
+											</select>
+											<span class="focus-border"></span>
+											<span class="input__note note__success color--green"></span>
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-6">
+										<div class="input select">
+											<select name="rubric">
+												<option value="-1">Отрасль знаний</option>
+												<option value="all">Все рубрики</option>
+												<option value="31">Авторское право</option>
+												<option value="32">Административное право</option>
+												<option value="33">Банковское право</option>
+												<option value="34">Гражданское право</option>
+												<option value="35">Жилищное право</option>
+												<option value="36">Земельное право</option>
+												<option value="37">Избирательное право</option>
+												<option value="38">Конституционное право</option>
+												<option value="39">Медицина</option>
+												<option value="40">Международное право</option>
+												<option value="41">Налоговое и финансовое право</option>
+												<option value="42">Образование</option>
+												<option value="43">Охрана труда</option>
+												<option value="44">Пенсионное обеспечение</option>
+												<option value="45">Семейное право</option>
+												<option value="46">Социальное обеспечение</option>
+												<option value="47">Строительство</option>
+												<option value="48">Судоустройство</option>
+												<option value="49">Таможенное право</option>
+												<option value="50">Торговое право</option>
+												<option value="51">Транспортное право</option>
+												<option value="52">Трудовое право</option>
+												<option value="53">Уголовное право</option>
+												<option value="54">Хозяйственное право</option>
+												<option value="55">Экологическое право</option>
+												<option value="56">Иное</option>
+											</select>
+											<span class="focus-border"></span>
+											<span class="input__note note__success color--green"></span>
+										</div>
+									</div>
+								</div>
+								<div class="flex-row">
+									<div class="col-xs-12 col-md-12">
+										<div class="input">
+											<input type="text" placeholder="" name="faq_text" id="ex-search-keywords">
+											<label>Ключевые слова</label>
+											<span class="focus-border"></span>
+											<span class="input__note note__success color--green"></span>
+										</div>
+									</div>
+								</div>
+								<footer class="form-foot">
+									<input type="submit" class="button button--sm" value="Поиск">
+									<input type="reset" class="button button--border button--sm" value="Очистить поля поиска">
+								</footer>
+							</form>
+							<div class="count-results">Найдено: <b>382 ресурса</b></div>
 						</div>
 
 						<div class="paging">
@@ -197,16 +286,46 @@
 
 						<div class="result">
 							<ul class="default-list">
-								<li><a href="#">Давидович Мария Казимировна</a>, Сигневичская сельская библиотека ГУК "Березовская районная библиотечная система"</li>
-								<li><a href="#">Давидович Наталья Анатольевна</a>, Библиотека ГУО "Новодворцевская базовая школа"</li>
-								<li><a href="#">Давидовская Валентина Владимировна</a>, Библиотека ГУО "Гольчицкая средняя школа"</li>
-								<li><a href="#">Давидовская Елена Александровна</a>, Библиотека ГУО "Средняя школа № 2 им. А.К. Флегонтова г. Червеня"</li>
-								<li><a href="#">Давидовская Жанна Александровна</a>, Вежская сельская библиотека сети публичных библиотек Слуцкого района</li>
-								<li><a href="#">Давидовская Тамара Аркадьевна</a>, Комсомольская сельская библиотека сети публичных библиотек Копыльского района</li>
-								<li><a href="#">Давитко Анна Николаевна</a>, Сидоровичская сельская библиотека ГУК "Чечерская центральная районная библиотека"</li>
-								<li><a href="#">Давлюд Наталья Николаевна</a>, Центральная районная библиотека сети публичных библиотек Столбцовского района</li>
-								<li><a href="#">Давлюд Наталья Николаевна</a>, Детская библиотека сети публичных библиотек Столбцовского района</li>
-								<li><a href="#">Давыденко Людмила Михайловна</a>, Центральная районная библиотека ГУ "Лельчицкая районная централизованная библиотечная система"</li>
+								<li>
+									<div><a href="#">Academic Search Complete (EBSCO)</a></div>
+									<div>база данных содержит полные тексты публикаций из рецензируемых научных журналов по различным дисципл...</div>
+									<div>полнотекстовая БД</div>
+								</li>
+								<li>
+									<div><a href="#">Academic Search Complete (EBSCO)</a></div>
+									<div>база данных содержит полные тексты публикаций из рецензируемых научных журналов. Охватывает такие об...</div>
+									<div>полнотекстовая БД</div>
+								</li>
+								<li>
+									<div><a href="#">Arts and Humanities Citation Index (Web of Science) (Web of Knowledge)</a></div>
+									<div>база данных содержит полные тексты публикаций из рецензируемых научных журналов по различным дисципл...</div>
+									<div>полнотекстовая БД</div>
+								</li>
+								<li>
+									<div><a href="#">Academic Search Complete (EBSCO)</a></div>
+									<div>база данных содержит полные тексты публикаций из рецензируемых научных журналов. Охватывает такие об...</div>
+									<div>полнотекстовая БД</div>
+								</li>
+								<li>
+									<div><a href="#">Academic Search Complete (EBSCO)</a></div>
+									<div>база данных содержит полные тексты публикаций из рецензируемых научных журналов по различным дисципл...</div>
+									<div>полнотекстовая БД</div>
+								</li>
+								<li>
+									<div><a href="#">Academic Search Complete (EBSCO)</a></div>
+									<div>база данных содержит полные тексты публикаций из рецензируемых научных журналов. Охватывает такие об...</div>
+									<div>полнотекстовая БД</div>
+								</li>
+								<li>
+									<div><a href="#">Arts and Humanities Citation Index (Web of Science) (Web of Knowledge)</a></div>
+									<div>база данных содержит полные тексты публикаций из рецензируемых научных журналов по различным дисципл...</div>
+									<div>полнотекстовая БД</div>
+								</li>
+								<li>
+									<div><a href="#">Academic Search Complete (EBSCO)</a></div>
+									<div>база данных содержит полные тексты публикаций из рецензируемых научных журналов. Охватывает такие об...</div>
+									<div>полнотекстовая БД</div>
+								</li>
 							</ul>
 						</div>
 
@@ -279,15 +398,23 @@
 	<script src="js/lib/jquery.easing.1.3.js"></script>
 	<script src="js/lib/jquery.fitvids.js"></script>
 	<script src="js/lib/imagesloaded.pkgd.min.js"></script>
-	<script src="js/lib/smoothscroll.js"></script>
-
-	<!-- http://iamdustan.com/smoothscroll/ -->
 	<script src="js/lib/sly/sly.min.js"></script>
+	<script src="js/lib/parsley.min.js"></script>
+	<script src="js/lib/cleave.min.js"></script>
+
+	<!-- selectize -->
+	<link rel="stylesheet" href="js/lib/selectize/selectize.css">
+	<script type="text/javascript" src="js/lib/selectize/selectize.min.js"></script>
 
 	<!-- owl -->
 	<link rel="stylesheet" href="js/lib/owl/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="js/lib/owl/assets/owl.theme.default.min.css">
 	<script type="text/javascript" src="js/lib/owl/owl.carousel.min.js"></script>
+
+	<!-- flatpickr -->
+	<link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
+	<script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+	<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
 
 	<script type="text/javascript" src="js/common.js"></script>
 </body>
